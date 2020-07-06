@@ -27,8 +27,10 @@
     --clr-light: rgba(255, 255, 255, 0.877);
     --clr-dark: #303030e5;
     --clr-grey: #dbdadab4;
-    --clr-accent1: #424240;
-    --clr-accent2: #dad1bd;
+    /* --clr-accent1: #424240; */
+    --clr-accent1: #0e0c0cf3;
+    /* --clr-accent2: #dad1bd; */
+    --clr-accent2: #c4adad;
 
     --fs-name: 3.0rem;
     --fs-h1: 2.0rem;
