@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <title> Resume</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
@@ -14,183 +15,231 @@
     </head>
     <body>
         <div class='resume'>
-            <div class="resume_left">
-                <div class="resume_item contacts">
-                    <h1 class="my_name" >Wei-Bo Hsu</h1>
-                    <ul class="contacts_list">
-                        <li>
-                            <div class="icon"><i class="fas fa-map-marker"></i></div>
-                            <div class="data">1505-152 Saint Patrick</div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fas fa-envelope"></i></div>
-                            <div class="data">hsuweibo@yahoo.com</div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fas fa-phone"></i></div>
-                            <div class="data">6474650888</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="resume_item education">
-                    <h2>Education</h2>
-                    <ul class="education_list">
-                        <li>
-                            <strong>University of Toronto</strong>
-                            <p>MSc in Computer Science</p>
-                            <p>Class of 2020</p>
-                        </li>
-                        <li>
-                            <strong>University of Toronto</strong>
-                            <p>BSc in Computer Science</p>
-                            <p>Class of 2018</p>
-                        </li>
-
-                    </ul>
-                    
-                </div>
-
-                <div class="resume_item technologies">
-                    <h2>Technologies</h2>
-                    <ul class="inline_list">
-                        <li>Python</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>Javascript</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>Git</li>
-                    </ul>
-                </div>
-
-                <div class="resume_item">
-                    <h2>Soft Skills</h2>
-                    <ul class="inline_list">
-                        <li>Creativity</li>
-                        <li>Problem-Solving</li>
-                        <li>Attention to Detail</li>
-                        <li>Patience</li>
-                    </ul>
-                </div>
-
-                <div class="resume_item awards">
-                    <h2>Awards</h2>
-                    <ul class="awards_list">
-                        <li>Dean's List Scholar in 2016, 2017, 2018</li>
-                    </ul>
-                </div>
-
+            <div class="resume__top">
+                <h1 class="resume__name">Wei-Bo Hsu</h1>
             </div>
-
-
-            <div class="resume_right">
-                <!-- <div class="resume_item my_name">
-                    <h1>Wei-Bo Hsu</h1>
-                </div> -->
-                <div class="resume_item experience">
-                    <h2>Work Experience</h2>
-                    <div class="work_item">
-                        <div class="work_title">
-                            <h3>Teaching Assistant</h3>
-                            <div>
-                                2019-2020
-                            </div>
-                        </div>
-                        <div class="work_subtitle">
-                            University of Toronto
-                        </div>
-                        <ul>
-                            <li>Held office hours for students in need of help</li>
-                            <li>Led classroom discussion during teaching sessions</li>
+            <div class="resume__content">
+                <div class="resume__left">
+                    <div class="resume-section resume-section--profile">
+                        <h1 class="resume-section__title">Contact</h1>
+                        <ul class="resume-section__content list"> 
+                            <li class="list__item contact-list-item">
+                                <div class="contact-list-item__icon"><i class="fas fa-map-marker"></i></div>
+                                <div class="contact-list-item__data">1505-152 Saint Patrick</div>
+                            </li>
+                            <li class="list__item contact-list-item">
+                                <div class="contact-list-item__icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-list-item__data">hsuweibo@yahoo.com</div>
+                            </li>
+                            <li class="list__item contact-list-item">
+                                <div class="contact-list-item__icon"><i class="fas fa-phone"></i></div>
+                                <div class="contact-list-item__data">(647)465-0888</div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="work_item">
-                        <div class="work_title">
-                            <h3>Quality Assurance Tester</h3>
-                            <div>
-                                2017-2018
-                            </div>
-                        </div>
-                        <div class="work_subtitle">
-                            Trapeze Group
-                        </div>
-                        <ul>
-                            <li>Performed regression and smoke testing before every iteration of new product release</li>
-                            <li>Wrote test cases and maintained the team's test case repository</li>
-                            <li>Designed traceability matrices to track test progress with respect to client requirements</li>
+
+                    <div class="resume-section resume-section--education">
+                        <h2 class="resume-section__title">Education</h2>
+                        <ul class="resume-section__content list">
+                            <li class='list__item'>
+                                <strong>University of Toronto</strong>
+                                <p>MSc in Computer Science</p>
+                                <p>Class of 2020</p>
+                            </li>
+                            <li class='list__item'>
+                                <strong>University of Toronto</strong>
+                                <p>BSc in Computer Science</p>
+                                <p>Class of 2018</p>
+                            </li>
+
                         </ul>
                     </div>
-                    <div class="work_item">
-                        <div class="work_title">
-                            <h3>Research Intern</h3>
-                            <div>
-                                2015 Summer
-                            </div>
-                        </div>
-                        <div class="work_subtitle">
-                            Academia Sinica
-                        </div>
-                        <ul>
-                            <li>Coded in Android Studio an evacuation Android application using the OpenStreetMap API </li>
+
+                    <div class="resume-section resume-section--technologies">
+                        <h2 class="resume-section__title">Technologies</h2>
+                        <ul class="resume-section__content inline-list">
+                            <li class="inline-list__item">Python</li>
+                            <li class="inline-list__item">CSS</li>
+                            <li class="inline-list__item">HTML</li>
+                            <li class="inline-list__item">Javascript</li>
+                            <li class="inline-list__item">Java</li>
+                            <li class="inline-list__item">C</li>
+                            <li class="inline-list__item">Git</li>
                         </ul>
+                    </div>
+
+                    <div class="resume-section resume-section--soft-skills">
+                        <h2 class='resume-section__title'>Soft Skills</h2>
+                        <ul class="resume-section__content inline-list">
+                            <li class="inline-list__item">Creativity</li>
+                            <li class="inline-list__item">Patience</li>
+                            <li class="inline-list__item">Problem-Solving</li>
+                            <li class="inline-list__item">Attention to Detail</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-section resume-section--awards">
+                        <h2 class='resume-section__title'> Awards</h2>
+                        <ul class="resume-section__content list">
+                            <li class="list__item">Dean's List Scholar in 2016, 2017, 2018</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-section resume-section--awards">
+                        <h2 class='resume-section__title'>References</h2>
+                        <div class="resume-section__content">
+                            <p>Provided on request</p>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="resume_item projects">
-                    <h2 >Technical Projects</h2>
-                    <div class="work_item">
-                        <div class="work_title">
-                            <h3>Sorting Visualizer</h3>
-                            <div>
-                                2020
+
+                <div class="resume__right">
+                    <!-- <div class="resume-section">
+                        <h1>Wei-Bo Hsu</h1>
+                    </div> -->
+                    <div class="resume-section resume-section--experience">
+                        <h2 class="resume-section__title">Work Experience</h2>
+                        <div class="resume-section__content">
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class="work-item__title">Teaching Assistant</h3>
+                                    <div class="work-item__date">
+                                        2019-2020
+                                    </div>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    University of Toronto
+                                </div>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Held office hours for students in need of help</li>
+                                    <li class="list__item">Led classroom discussion during teaching sessions</li>
+                                </ul>
+                            </div>
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class="work-item__title" >Quality Assurance Tester</h3>
+                                    <div class="work-item__date" >
+                                        2017-2018
+                                    </div>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    Trapeze Group
+                                </div>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Performed regression and smoke testing before every iteration of new product release</li>
+                                    <li class="list__item">Wrote test cases and maintained the team's test case repository</li>
+                                    <li class="list__item">Designed traceability matrices to track test progress with respect to client requirements</li>
+                                </ul>
+                            </div>
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class="work-item__title">Research Intern</h3>
+                                    <div class="work-item__date">
+                                        2015 Summer
+                                    </div>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    Academia Sinica
+                                </div>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Coded in Android Studio an evacuation Android application using the OpenStreetMap API </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="work_subtitle">
-                            <ul class='links'>
-                                <li><a href="https://hsuweibo.github.io/SortingVisualizer/" target='_blank'>Website</a></li>
-                                <li><a href="https://github.com/hsuweibo/SortingVisualizer" target='_blank'>Github</a></li>
-                            </ul>
-                        </div>
-                        <ul>
-                            <li>Build a web application for visualizing sorting algorithms</li>
-                            <li>Implemented Merge Sort, Quick Sort, Bubble Sort, and Insertion Sort</li>
-                        </ul>
                     </div>
 
-                    <div class="work_item">
-                        <div class="work_title">
-                            <h3>Snake Game</h3>
-                            <div>
-                                2020
+                    <div class="resume-section resume-section--projects">
+                        <h2 class="resume-section__title">Technical Projects</h2>
+                        <div class="resume-section__content">
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class="work-item__title">Sorting Visualizer</h3>
+                                    <div class="work-item__date">
+                                        2020
+                                    </div>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    <ul class='link-list inline-list'>
+                                        <li class='link-list__item'>
+                                            <a  class='link-list__link' href="https://hsuweibo.github.io/SortingVisualizer/" target='_blank'>Website</a>
+                                        </li>
+                                        <li class='link-list__item'>
+                                            <a  class='link-list__link' href="https://github.com/hsuweibo/SortingVisualizer" target='_blank'>Github</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Build a web application for visualizing sorting algorithms</li>
+                                    <li class="list__item">Implemented Merge Sort, Quick Sort, Bubble Sort, and Insertion Sort</li>
+                                </ul>
+                            </div>
+        
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class='work-item__title'>Snake Game</h3>
+                                    <div class="work-item__date">
+                                        2020
+                                    </div>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    <ul class='link-list inline-list'>
+                                        <li class='link-list__item'>
+                                            <a class='link-list__link' href="https://github.com/hsuweibo/Pygame-Snake" target='_blank'>
+                                                Github
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Implemented an interactive snake game using the PyGame library</li>
+                                </ul>
+                            </div>
+        
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class="work-item__title">Fractal Tree Generator</h3>
+                                    <div class="work-item__date">
+                                        2020
+                                    </div>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    <ul class='link-list inline-list'>
+                                        <li class='link-list__item'>
+                                            <a class='link-list__link' href="https://hsuweibo.github.io/RandomFractalTreeGenerator/"" target='_blank'>
+                                                Website
+                                            </a>
+                                        </li>
+                                        <li class='link-list__item'>
+                                            <a class='link-list__link' href="https://github.com/hsuweibo/RandomFractalTreeGenerator" target='_blank'>
+                                                Github
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="work-item_content list">
+                                    <li class="list__item">Coded a fun fractal tree random generator using the HTML5 canvas API</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="work_subtitle">
-                            <ul class='links'>
-                                <li><a href="https://github.com/hsuweibo/Pygame-Snake" target='_blank'>Github</a></li>
-                            </ul>
-                        </div>
-                        <ul>
-                            <li>Implemented an interactive snake game using the PyGame library</li>
-                        </ul>
                     </div>
 
-                    <div class="work_item">
-                        <div class="work_title">
-                            <h3>Fractal Tree Generator</h3>
-                            <div>
-                                2020
+                    <div class="resume-section resume-section--volunteer">
+                        <h2 class="resume-section__title">Volunteer Experience</h2>
+                        <div class="resume-section__content">
+                            <div class="work-item">
+                                <div class="work-item__heading">
+                                    <h3 class="work-item__title">Event Coordinator</h3>
+                                </div>
+                                <div class="work-item__subtitle">
+                                    TaiwanFest
+                                </div>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Scheduled activities and decorated the venue for a festival that advertised and promoted Taiwan’s artistic culture</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="work_subtitle">
-                            <ul class='links'>
-                                <li><a href="https://hsuweibo.github.io/RandomFractalTreeGenerator/" target='_blank'>Website</a></li>
-                                <li><a href="https://github.com/hsuweibo/RandomFractalTreeGenerator" target='_blank'>Github</a></li>
-                            </ul>
-                        </div>
-                        <ul>
-                            <li>Coded a simple fractal tree random generator using HTML5 canvas</li>
-                        </ul>
                     </div>
                 </div>
             </div>
