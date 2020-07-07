@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
 
 
@@ -27,15 +27,15 @@
     --clr-light: rgba(255, 255, 255, 0.877);
     --clr-dark: #303030e5;
     --clr-grey: #dbdadab4;
-    /* --clr-accent1: #424240; */
-    --clr-accent1: #0e0c0cf3;
-    /* --clr-accent2: #dad1bd; */
-    --clr-accent2: #c4adad;
+    --clr-accent1: #424240;
+    /* --clr-accent1: #0e0c0cf3; */
+    --clr-accent2: #dad1bd;
+    /* --clr-accent2: #c4adad; */
 
     --fs-name: 3.0rem;
     --fs-h1: 2.0rem;
     --fs-h2: 1.5rem;
-    --fs-h3: 1.2rem;
+    --fs-h3: 1.1rem;
     --fs-body: 0.9rem;
 }
 
@@ -45,7 +45,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     font-weight: var(--fw-primary-reg);
-    line-height: 1.5;
+    line-height: normal;
 }
 
 
@@ -99,14 +99,15 @@ body {
     font-family: var(--ff-display);
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 1.5;
     margin: 0 0 .2em;
 }
 
 
 .contact-list-item {
     display: flex;
-    /* This makes the flex container not span 100% of the parent width, so that we can center the flex container with margin: 0 auto */
-    width: max-content;
+    width: 100%;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -120,16 +121,20 @@ body {
     display: block;
 }
 
+.thesis-title {
+    margin: .4em 0 .6em;
+}
+
 .list {
     list-style-type: none;
 }
 
 .list .list__item {
-    line-height: 1.2;
+    line-height: normal;
 }
 
 .list .list__item + .list__item {
-    margin-top: .5em;
+    margin-top: .3em;
 }
 
 .inline-list{
@@ -204,10 +209,11 @@ body {
 
 .work-item__title {
     font-size: var(--fs-h3);
+    line-height: 1.5;
 }
 
 .work-item__subtitle{
-    line-height: 1;
+    line-height: normal;
     margin-bottom: .5em;
 }
 
@@ -218,11 +224,14 @@ body {
 
 .work-item .list {
     list-style-type: circle;
-    line-height: 1.2;
+    line-height: normal;
     padding-left: var(--indent-len);;
 }
 
 /* For the website and github links */
+.link-list {
+    margin:.2em 0;
+}
 .link-list__link {
     text-decoration: none;
     text-transform: uppercase;
