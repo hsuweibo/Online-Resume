@@ -7,7 +7,7 @@
         <title> Resume</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
-        <!-- Update these with your own fonts -->
+        
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="./style.css">
@@ -45,8 +45,7 @@
                                 <strong>University of Toronto</strong>
                                 <p>MSc in Computer Science</p>
                                 <p>Graduated in 2020</p>
-                                <p>Grade: A- at minimum</p>
-                                <p class="thesis-title">Thesis title: <i>"Repairing not well-formed feature-based model templates"</i></p>
+                                <p>Average grade: A</p>                                
                             </li>
                             <li class='list__item'>
                                 <strong>University of Toronto</strong>
@@ -54,7 +53,6 @@
                                 <p>Graduated in 2018</p>
                                 <p>CGPA: 3.91/4.0</p>
                             </li>
-
                         </ul>
                     </div>
 
@@ -113,57 +111,101 @@
 
 
                 <div class="resume__right">
-                    <!-- <div class="resume-section">
-                        <h1>Wei-Bo Hsu</h1>
+                    <!-- <div class="resume-section resume-section--education">
+                        <h2 class="resume-section__title">Education</h2>
+                        <ul class="resume-section__content list">
+                            <div class="work-item">
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">MSc, Computer Science, University of Toronto</h3>
+                                        <div class="work-item-header__date">
+                                            2020
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-item__content">
+                                    <p>Average grade: A</p>
+                                    <p class="thesis-title">Thesis title: <i>"Repairing not well-formed feature-based model templates"</i></p>
+                                    <p>Summary: this thesis formalized the concept of well-formedness in feature-based model templates, a type of model-based software product line, and proposed a method for repairing instances that are not well-formed.</p>
+                                </div>
+                            </div>
+
+                            <div class="work-item">
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">BSc, Computer Science, University of Toronto</h3>
+                                        <div class="work-item-header__date">
+                                            2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-item__content">
+                                    <p>CGPA: 3.91</p>
+                                </div>
+                            </div>
+                        </ul>
                     </div> -->
+
                     <div class="resume-section resume-section--experience">
                         <h2 class="resume-section__title">Work Experience</h2>
                         <div class="resume-section__content">
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title">Teaching Assistant</h3>
-                                    <div class="work-item__date">
-                                        2019-2020
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">Teaching Assistant</h3>
+                                        <div class="work-item-header__date">
+                                            2019-2020
+                                        </div>
+                                    </div>
+                                    <div class="work-item-header__bot">
+                                        <div class="work-item-header__subtitle">
+                                            University of Toronto
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="work-item__subtitle">
-                                    University of Toronto
-                                </div>
                                 <ul class="work-item__content list">
-                                    <li class="list__item">Taught the following two courses: <i>Formal Methods of Software Engineering</i> (CSC465) and <i>Discrete Mathemetics for Computer Scientists</i> (CSC465)</li>
+                                    <li class="list__item">Taught the following two courses: <i>"Formal Methods of Software Design"</i> and <i>"Mathematical Expression and Reasoning for Computer Science"</i> </li>
                                     <li class="list__item">Held weekly office hours and tutored dozen of students</li>
                                     <li class="list__item">Led classroom discussion of at least 50 students during teaching sessions</li>
                                 </ul>
                             </div>
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title" >Quality Assurance Tester</h3>
-                                    <div class="work-item__date" >
-                                        2017-2018
+                                <div class="work-item__header work-item-header">
+                                    <div class='work-item-header__top'>
+                                        <h3 class="work-item-header__title" >Quality Assurance Tester</h3>
+                                        <div class="work-item-header__date" >
+                                            2017-2018
+                                        </div>
+                                    </div>
+                                    <div class='work-item-header__bot'>
+                                        <div class="work-item-header__subtitle">
+                                            Trapeze Group
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="work-item__subtitle">
-                                    Trapeze Group
-                                </div>
                                 <ul class="work-item__content list">
-                                    <li class="list__item">Performed regression and smoke testing before every iteration of new product release</li>
+                                    <li class="list__item">Performed regression and smoke testing for every product release</li>
                                     <li class="list__item">Wrote over 200 certified, well-documented test cases and maintained the team's test case repository</li>
                                     <li class="list__item">Designed more than 20 traceability matrices to track test progress with respect to client requirements</li>
-                                    <li class="list__item">Wrote VBA automation scripts for the creation or modification of traceability matrices</li>
+                                    <li class="list__item">Wrote VBA automation scripts for the creation and modification of traceability matrices</li>
                                 </ul>
                             </div>
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title">Research Assistant</h3>
-                                    <div class="work-item__date">
-                                        2015 Summer
+                                <div class="work-item__header work-item-header">
+                                    <div class='work-item-header__top'>
+                                        <h3 class="work-item-header__title">Research Assistant</h3>
+                                        <div class="work-item-header__date">
+                                            2015 Summer
+                                        </div>
+                                    </div>
+                                    <div class='work-item-header__bot'>
+                                        <div class="work-item-header__subtitle">
+                                            Academia Sinica
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="work-item__subtitle">
-                                    Academia Sinica
-                                </div>
                                 <ul class="work-item__content list">
-                                    <li class="list__item">Coded a mobile client application that retrieved information on evacuation shelters from back-end servers and displayed them in either a list view, or a map view implemented using the OpenStreetMap API</li>
+                                    <li class="list__item">Coded a mobile client application that retrieved information on evacuation shelters from back-end servers and displayed them on a map view implemented using the OpenStreetMap API</li>
                                 </ul>
                             </div>
                         </div>
@@ -173,21 +215,25 @@
                         <h2 class="resume-section__title">Personal Projects</h2>
                         <div class="resume-section__content">
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title">Sorting Visualizer</h3>
-                                    <div class="work-item__date">
-                                        2020
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">Sorting Visualizer</h3>                         
+                                        <div class="work-item-header__date">
+                                            2020
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="work-item__subtitle">
-                                    <ul class='link-list inline-list'>
-                                        <li class='link-list__item'>
-                                            <a  class='link-list__link' href="https://hsuweibo.github.io/SortingVisualizer/" target='_blank'>Website</a>
-                                        </li>
-                                        <li class='link-list__item'>
-                                            <a  class='link-list__link' href="https://github.com/hsuweibo/SortingVisualizer" target='_blank'>Github</a>
-                                        </li>
-                                    </ul>
+                                    <div class="work-item-header__bot">
+                                        <div class="work-item-header__subtitle">
+                                            <ul class='link-list inline-list'>
+                                                <li class='link-list__item'>
+                                                    <a  class='link-list__link' href="https://hsuweibo.github.io/SortingVisualizer/" target='_blank'>Website</a>
+                                                </li>
+                                                <li class='link-list__item'>
+                                                    <a  class='link-list__link' href="https://github.com/hsuweibo/SortingVisualizer" target='_blank'>Github</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <ul class="work-item__content list">
                                     <li class="list__item">Built a web application for visualizing sorting algorithms</li>
@@ -196,20 +242,25 @@
                             </div>
         
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class='work-item__title'>Snake Game</h3>
-                                    <div class="work-item__date">
-                                        2020
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class='work-item-header__title'>Snake Game</h3>
+                                        
+                                        <div class="work-item-header__date">
+                                            2020
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="work-item__subtitle">
-                                    <ul class='link-list inline-list'>
-                                        <li class='link-list__item'>
-                                            <a class='link-list__link' href="https://github.com/hsuweibo/Pygame-Snake" target='_blank'>
-                                                Github
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <div class="work-item-header__bot">
+                                        <div class="work-item-header__subtitle">
+                                            <ul class='link-list inline-list'>
+                                                <li class='link-list__item'>
+                                                    <a class='link-list__link' href="https://github.com/hsuweibo/Pygame-Snake" target='_blank'>
+                                                        Github
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <ul class="work-item__content list">
                                     <li class="list__item">Implemented an interactive snake game using the PyGame library</li>
@@ -217,28 +268,33 @@
                             </div>
         
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title">Fractal Tree Generator</h3>
-                                    <div class="work-item__date">
-                                        2020
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">Fractal Tree Generator</h3>                                        
+                                        
+                                        <div class="work-item-header__date">
+                                            2020
+                                        </div>
+                                    </div>
+                                    <div class="work-item-header__bot">
+                                        <div class="work-item-header__subtitle">
+                                            <ul class='link-list inline-list'>
+                                                <li class='link-list__item'>
+                                                    <a class='link-list__link' href="https://hsuweibo.github.io/RandomFractalTreeGenerator/"" target='_blank'>
+                                                        Website
+                                                    </a>
+                                                </li>
+                                                <li class='link-list__item'>
+                                                    <a class='link-list__link' href="https://github.com/hsuweibo/RandomFractalTreeGenerator" target='_blank'>
+                                                        Github
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="work-item__subtitle">
-                                    <ul class='link-list inline-list'>
-                                        <li class='link-list__item'>
-                                            <a class='link-list__link' href="https://hsuweibo.github.io/RandomFractalTreeGenerator/"" target='_blank'>
-                                                Website
-                                            </a>
-                                        </li>
-                                        <li class='link-list__item'>
-                                            <a class='link-list__link' href="https://github.com/hsuweibo/RandomFractalTreeGenerator" target='_blank'>
-                                                Github
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <ul class="work-item_content list">
-                                    <li class="list__item">Coded a fun fractal tree random generator using the HTML5 canvas API</li>
+                                <ul class="work-item__content list">
+                                    <li class="list__item">Coded a fractal tree random generator using the HTML5 canvas API</li>
                                 </ul>
                             </div>
                         </div>
@@ -248,41 +304,56 @@
                         <h2 class="resume-section__title">Course Projects</h2>
                         <div class="resume-section__content">
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title">Puzzle Solver</h3>
-                                    <div class="work-item__date">
-                                        2016
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">Puzzle Solver</h3>
+                                        <div class="work-item-header__date">
+                                            2016
+                                        </div>
+                                    </div>
+                                    <div class="work-item-header__bot">
+                                        <div class="work-item-header__subtitle">
+                                            <p>Final group project for <i>"Introduction to Artificial Intelligence" </i> </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="work-item__subtitle">
-                                    <p>Final group project for <i>Introduction to Artificial Intelligence</i> (CSC384)</p>
-                                </div>
                                 <ul class="work-item__content list">
-                                    <li class="list__item">Built a command-line solver for the "N-puzzle" using various search techniques, including A*, depth-first, breadth-first, and best-first search.</li>
+                                    <li class="list__item">Built a command-line solver for the "N-puzzle" problem using various search methods, including A*, depth-first, breadth-first, and best-first.</li>
                                 </ul>
                             </div>
 
 
                             <div class="work-item">
-                                <div class="work-item__heading">
-                                    <h3 class="work-item__title">Textbook Rental Website</h3>
-                                    <div class="work-item__date">
-                                        2015
+                                <div class="work-item__header work-item-header">
+                                    <div class="work-item-header__top">
+                                        <h3 class="work-item-header__title">Textbook Rental Website</h3>
+                                        <div class="work-item-header__date">
+                                            2015
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="work-item__subtitle">
-                                    <p>Final group project for <i> Programming on the Web</i>  (CSC309) </p>
-                                    <ul class='link-list inline-list'>
-                                        <a class='link-list__link' href="https://youtu.be/YnnQrrcLZtw" target='_blank'>
-                                            Youtube
-                                        </a>
-                                    </ul>
+                                    <div class="work-item-header__bot">
+                                        <div class="work-item-header__subtitle">
+                                            <p>Final group project for <i>"Programming on the Web"</i> </p>
+                                            <ul class='link-list inline-list'>
+                                                <a class='link-list__link' href="https://youtu.be/YnnQrrcLZtw" target='_blank'>
+                                                    Youtube
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <ul class="work-item__content list">
                                     <li class="list__item">Built a minimal, responsive textbook rental web application using NodeJs and MongoDB for back-end handling, and Bootstrap for front-end design</li>
                                 </ul>
                             </div>
 
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h2 class="resume-section__title">Master's Thesis</h2>
+                        <div class="resume-section__content">
+                            <p class="thesis-title">Thesis title: <i>"Repairing not well-formed feature-based model templates"</i></p>
+                            <p>Summary: this thesis formalized the concept of well-formedness in feature-based model templates, a type of model-based software product line, and proposed a method for repairing instances that are not well-formed.</p>
                         </div>
                     </div>
                 </div>
