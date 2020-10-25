@@ -1,311 +1,297 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-print-color-adjust: exact; 
+  padding: 0;
+  margin: 0;
+  -webkit-print-color-adjust: exact;
 }
-
 
 :root {
-    --ff-primary: 'Lato', sans-serif;
-    --ff-display: 'Overlock', cursive;
+  --ff-primary: "Lato", sans-serif;
+  --ff-display: "Overlock", cursive;
 
-    --fw-primary-reg: 300;
-    --fw-primary-bold: 700;
+  --fw-primary-reg: 300;
+  --fw-primary-bold: 700;
 
-    --fw-display-reg: 400;
-    --fw-display-semibold: 700;
+  --fw-display-reg: 400;
+  --fw-display-semibold: 700;
 
-    --width-section-border: 2px;
-    --indent-len: 1.8em;
-    --right-section-separation: 8px;
-    --left-section-separation: 10px;
+  --width-section-border: 2px;
+  --indent-len: 1.8em;
+  --right-section-separation: 8px;
+  --left-section-separation: 10px;
 
+  --clr-light: rgba(255, 255, 255, 0.877);
+  --clr-dark: #303030e5;
+  --clr-grey: #dbdadab4;
+  --clr-accent1: #424240;
+  /* --clr-accent1: #0e0c0cf3; */
+  --clr-accent2: #dad1bd;
+  /* --clr-accent2: #c4adad; */
 
-    --clr-light: rgba(255, 255, 255, 0.877);
-    --clr-dark: #303030e5;
-    --clr-grey: #dbdadab4;
-    --clr-accent1: #424240;
-    /* --clr-accent1: #0e0c0cf3; */
-    --clr-accent2: #dad1bd;
-    /* --clr-accent2: #c4adad; */
-
-    --fs-name: 2.3rem;
-    --fs-h1: 2.0rem;
-    --fs-h2: 1.15rem;
-    --fs-h3: 1rem;
-    --fs-body: 0.9rem;
+  --fs-name: 2.3rem;
+  --fs-h1: 2rem;
+  --fs-h2: 1.15rem;
+  --fs-h3: 1rem;
+  --fs-body: 0.9rem;
 }
-
-
 
 body {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-primary-reg);
-    line-height: normal;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-primary-reg);
+  line-height: normal;
 }
 
-
 .resume {
-    max-width: 19.5cm;
-    height: auto;
-    margin: 0 auto;
+  max-width: 19.5cm;
+  height: auto;
+  margin: 0 auto;
 }
 
 .resume__top {
-    text-align: center;
-    background-color: var(--clr-accent1);
-    padding: .5em;
+  text-align: center;
+  background-color: var(--clr-accent1);
+  padding: 0.5em;
 }
 
 .resume__name {
-    font-family: var(--ff-display);
-    font-size: var(--fs-name);
-    font-weight: var(--fw-display-semibold);
-    text-transform: uppercase;
-    color: var(--clr-accent2);
-    letter-spacing: .1em;
+  font-family: var(--ff-display);
+  font-size: var(--fs-name);
+  font-weight: var(--fw-display-semibold);
+  text-transform: uppercase;
+  color: var(--clr-accent2);
+  letter-spacing: 0.1em;
 }
-
 
 .resume__left {
-    text-align: center;
-    background-color: var(--clr-accent2);
-    padding: .8em;
-    color: var(--clr-dark);
+  text-align: center;
+  background-color: var(--clr-accent2);
+  padding: 0.8em;
+  color: var(--clr-dark);
 }
-
 
 /* Draws border between the sections on the left column */
 .resume__left .resume-section::after {
-    content: "";
-    display: block;
-    height: var(--width-section-border);
-    width: 100%;
-    margin: var(--left-section-separation) 0;
-    background-color: var(--clr-accent1);
+  content: "";
+  display: block;
+  height: var(--width-section-border);
+  width: 100%;
+  margin: var(--left-section-separation) 0;
+  background-color: var(--clr-accent1);
 }
 
 .resume__left .resume-section:last-child::after {
-    display: none;
+  display: none;
 }
-
 
 .resume-section__title {
-    font-size: var(--fs-h2);
-    font-weight: var(--fw-primary-bold);
-    font-family: var(--ff-display);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: normal;
-    margin: 0 0 .15em;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-primary-bold);
+  font-family: var(--ff-display);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: normal;
+  margin: 0 0 0.15em;
 }
-
 
 .contact-list-item {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-
 .contact-list-item__icon {
-    display: block;
-    margin-right: .5em;
+  display: block;
+  margin-right: 0.5em;
 }
 
 .contact-list-item__data {
-    display: block;
+  display: block;
 }
 
 .thesis-title {
-    margin: 0 0 .3em;
+  margin: 0 0 0.3em;
 }
 
 .list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Default list spacing */
 .list .list__item + .list__item {
-    margin-top: 0em;
+  margin-top: 0em;
 }
 
 /* Custom list spacing for the education section */
 .resume-section--education .list .list__item + .list__item {
-    margin-top: .6em;
+  margin-top: 0.6em;
 }
 
-.inline-list{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+.inline-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .resume__left .inline-list {
-    justify-content: center;
+  justify-content: center;
 }
 
-.resume__left .inline-list .inline-list__item{
-    white-space: nowrap;
+.resume__left .inline-list .inline-list__item {
+  white-space: nowrap;
 }
 
 .inline-list__item {
-    display: block;
-    border: .5px solid var(--clr-dark);
-    padding: 0 .3em;
-    margin: .1em;
+  display: block;
+  border: 0.5px solid var(--clr-dark);
+  padding: 0 0.3em;
+  margin: 0.1em;
 }
 
-
-
 .resume__right {
-    padding: .8em; 
-    color: var(--clr-dark);
-    background-color: var(--clr-grey);
+  padding: 0.8em;
+  color: var(--clr-dark);
+  background-color: var(--clr-grey);
 }
 
 .resume__right .resume-section {
-    margin-bottom: var(--right-section-separation);
+  margin-bottom: var(--right-section-separation);
 }
-
 
 /* Make resume-section a flex container, so that we can draw the horizontal bar beside the title in a reponsive manner*/
 .resume__right .resume-section__title {
-    display: flex;
+  display: flex;
 }
 
 /* Draw the horizontal bar */
 .resume__right .resume-section__title:after {
-    content: "";
-    display: block;
-    background-color: var(--clr-accent1);
-    flex-grow: 1;
-    height: var(--width-section-border);
-    margin-left: .5em;
-    align-self: center;
+  content: "";
+  display: block;
+  background-color: var(--clr-accent1);
+  flex-grow: 1;
+  height: var(--width-section-border);
+  margin-left: 0.5em;
+  align-self: center;
 }
-
 
 /* Indent the content to make room for the vertical bar*/
 .resume__right .resume-section__content {
-    position: relative;
-    padding-left: var(--indent-len);
+  position: relative;
+  padding-left: var(--indent-len);
 }
 
 /* Draw the vertical bar */
 .resume__right .resume-section__content:before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: var(--width-section-border);
-    background-color: var(--clr-accent1);
-    position: absolute;
-    left: calc(var(--indent-len) / 2);
-    top: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: var(--width-section-border);
+  background-color: var(--clr-accent1);
+  position: absolute;
+  left: calc(var(--indent-len) / 2);
+  top: 0;
 }
 
 .work-item-header {
-    margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 .work-item-header__top {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
 }
-
 
 .work-item-header__title {
-    display: block;
-    font-size: var(--fs-h3);
-    line-height: normal;
+  display: block;
+  font-size: var(--fs-h3);
+  line-height: normal;
 }
 
-.work-item-header__top--with-links .work-item-header__title{
-    margin-right: 1em;
+.work-item-header__top--with-links .work-item-header__title {
+  margin-right: 1em;
 }
 
 .work-item-header__date {
-    display: block;
-    flex-grow: 1;
-    text-align: right;
+  display: block;
+  flex-grow: 1;
+  text-align: right;
 }
 
-.work-item-header__subtitle{
-    line-height: normal;
+.work-item-header__subtitle {
+  line-height: normal;
 }
 
-.work-item + .work-item{
-    margin-top: .4em;
+.work-item + .work-item {
+  margin-top: 0.4em;
 }
-
 
 .work-item .list {
-    list-style-type: circle;
-    line-height: normal;
-    padding-left: var(--indent-len);;
+  list-style-type: circle;
+  line-height: normal;
+  padding-left: var(--indent-len);
 }
 
 /* For the website and github links */
 .link-list {
-    margin:.2em 0;
+  margin: 0.2em 0;
 }
 .link-list__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .2px;
-    font-size: .78em;
-    color: var(--clr-dark);
-    border-radius: 5px;
-    display: block;
-    padding: .1em .5em;
-    background-color: rgb(192, 185, 185);
-    margin: 0 .1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  font-size: 0.78em;
+  color: var(--clr-dark);
+  border-radius: 5px;
+  display: block;
+  padding: 0.1em 0.5em;
+  background-color: rgb(192, 185, 185);
+  margin: 0 0.1em;
 }
 
 .link-list__link:hover {
-    background-color:  rgba(192, 185, 185, 0.527);
+  background-color: rgba(192, 185, 185, 0.527);
 }
 
-
-
 /* Use flexbox when viewed on larger screen */
-@media (min-width: 500px){
-    .resume {
-        margin: 2em auto;
-        
-        /* Roughly the dimension of an A4 paper */
-        max-width: 19.5cm;
-        /* max-height: 28cm; */
+@media (min-width: 500px) {
+  .resume {
+    margin: 2em auto;
 
-        -webkit-box-shadow: 0px 0px 5px 0px var(--clr-dark);
-        -moz-box-shadow: 0px 0px 5px 0px var(--clr-dark);
-        box-shadow: 0px 0px 5px 0px var(--clr-dark);
-    }
+    /* Roughly the dimension of an A4 paper */
+    max-width: 19.5cm;
+    /* max-height: 28cm; */
 
-    .resume__content {
-        display: flex;
-        flex-wrap: nowrap;
-    }
+    -webkit-box-shadow: 0px 0px 5px 0px var(--clr-dark);
+    -moz-box-shadow: 0px 0px 5px 0px var(--clr-dark);
+    box-shadow: 0px 0px 5px 0px var(--clr-dark);
+  }
 
-    .resume__left {
-        /* This ensures big single word like 'technologies' won't flow out of the flex item */
-        max-width: min-content; 
+  .resume__content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-        -webkit-box-shadow: 3px 0px 5px -1px var(--clr-dark);
-        -moz-box-shadow: 3px 0px 5px -1px var(--clr-dark);
-        box-shadow: 3px 0px 5px -1px var(--clr-dark);
-    }
+  .resume__left {
+    /* This ensures big single word like 'technologies' won't flow out of the flex item */
+    max-width: min-content;
 
-    .resume-section__title {
-        /* this ensures titles won't get wrapped if flex container shrinks */
-        white-space: nowrap;
-    }
+    -webkit-box-shadow: 3px 0px 5px -1px var(--clr-dark);
+    -moz-box-shadow: 3px 0px 5px -1px var(--clr-dark);
+    box-shadow: 3px 0px 5px -1px var(--clr-dark);
+  }
+
+  .resume-section__title {
+    /* this ensures titles won't get wrapped if flex container shrinks */
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  .link-list {
+    display: none;
+  }
 }
