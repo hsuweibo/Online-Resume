@@ -290,8 +290,8 @@ body {
   }
 }
 
-@media print {
+/* @media print {
   .link-list {
     display: none;
   }
-}
+} */
