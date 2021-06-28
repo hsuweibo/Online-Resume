@@ -19,8 +19,8 @@
 
   --width-section-border: 2px;
   --indent-len: 1.8em;
-  --right-section-separation: 8px;
-  --left-section-separation: 10px;
+  --right-section-separation: 7px;
+  --left-section-separation: 7px;
 
   --clr-light: rgba(255, 255, 255, 0.877);
   --clr-dark: #303030e5;
@@ -123,12 +123,12 @@ body {
 
 /* Default list spacing */
 .list .list__item + .list__item {
-  margin-top: 0.3em;
+  margin-top: 0.12em;
 }
 
 /* Custom list spacing for the education section */
 .resume-section--education .list .list__item + .list__item {
-  margin-top: 0.6em;
+  margin-top: 0.3em;
 }
 
 .inline-list {
