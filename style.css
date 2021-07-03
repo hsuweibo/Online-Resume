@@ -126,6 +126,16 @@ body {
   margin-top: 0.12em;
 }
 
+/* Custom list spacing on the right section*/
+.resume__right .list .list__item + .list__item {
+  margin-top: 0.12em;
+}
+
+/* Custom line height on the right section*/
+.resume__right .list .list__item {
+  line-height: 1.1;
+}
+
 /* Custom list spacing for the education section */
 .resume-section--education .list .list__item + .list__item {
   margin-top: 0.3em;
